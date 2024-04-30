@@ -1,0 +1,16 @@
+name: "✨ On push to main branch"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-docs:
+    name: '️‍📚️ Publish Docs'
+    uses: ./.github/workflows/docs.yaml
+
+  # deploy:
+  #   name: '🧪 Deploy App'
+  #   uses: ./.github/workflows/deploy.yaml
+   #  secrets: inherit
