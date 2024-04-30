@@ -9,6 +9,7 @@ jobs:
   publish-docs:
     name: '️‍📚️ Publish Docs'
     uses: ./.github/workflows/docs.yaml
+    secrets: inherit
 
   # deploy:
   #   name: '🧪 Deploy App'
